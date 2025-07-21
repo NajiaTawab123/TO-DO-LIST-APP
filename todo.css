@@ -1,0 +1,110 @@
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: var(--bg-color);
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    :root {
+      --bg-color: #f0f0f0;
+      --text-color: #333;
+      --card-bg: #fff;
+      --accent: #4caf50;
+    }
+
+    .dark-theme {
+      --bg-color: #121212;
+      --text-color: #f0f0f0;
+      --card-bg: #1e1e1e;
+      --accent: #81c784;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 400px;
+      background-color: var(--card-bg);
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      color: var(--text-color);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .input-group {
+      display: flex;
+      gap: 10px;
+    }
+
+    input[type="text"] {
+      flex: 1;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      padding: 10px 15px;
+      border: none;
+      border-radius: 8px;
+      background-color: var(--accent);
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 20px;
+    }
+
+    li {
+      background-color: #e0e0e0;
+      margin-bottom: 10px;
+      padding: 10px 15px;
+      border-radius: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.2s;
+    }
+
+    li.completed {
+      text-decoration: line-through;
+      opacity: 0.6;
+    }
+
+    .filters, .theme-toggle {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 15px;
+    }
+
+    .filters button {
+      flex: 1;
+      margin: 0 5px;
+      background-color: #ccc;
+      color: #000;
+    }
+
+    .filters button.active {
+      background-color: var(--accent);
+      color: #fff;
+    }
