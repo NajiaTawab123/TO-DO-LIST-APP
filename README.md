@@ -22,3 +22,12 @@ git clone https://github.com/NajiaTawab123/TO-DO-LIST-APP.git
 cd TO-DO-LIST-APP
 Open `todo.html` in your browser
 
+
+
+
+## 🙌 Author
+
+**Najia Tawab**  
+[GitHub Profile](https://github.com/NajiaTawab123)
+
+
